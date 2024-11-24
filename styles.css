@@ -1,0 +1,111 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: -20px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.headline {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #f8fafc;
+}
+
+.subtext {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+
+.subtext span {
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+.progress {
+    background: #334155;
+    border-radius: 8px;
+    height: 12px;
+    width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #10b981, #22d3ee);
+    border-radius: 8px;
+    animation: progress-fill 2s ease-out forwards;
+}
+
+@keyframes progress-fill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.button.discord {
+    background: #5865f2;
+}
+
+.button.discord:hover {
+    background: #4a57d4;
+}
+
+.button.github {
+    background: #2d2d2d;
+}
+
+.button.github:hover {
+    background: #101010;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
